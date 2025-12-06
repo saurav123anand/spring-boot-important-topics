@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: interceptor
+  datasource:
+    url: jdbc:mysql://localhost:3306/interceptor
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8080
