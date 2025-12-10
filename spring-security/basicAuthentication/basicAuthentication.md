@@ -6,3 +6,10 @@ that will be passed to AuthenticationManager for the next step
 
 Now we will tweak the default configuration to use basic authentication
 
+Implementation steps:
+1. Configure SecurityFilterChain
+2. Configure PasswordEncoder
+3. Configure AuthenticationManager
+4. Configure UserDetailsService
+5. Configure DaoAuthenticationProvider
+
