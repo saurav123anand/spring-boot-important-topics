@@ -1,8 +1,8 @@
 spring:
   application:
-    name: interceptor
+    name: basicAuthDemo
   datasource:
-    url: jdbc:mysql://localhost:3306/interceptor
+    url: jdbc:mysql://localhost:3306/basic_auth
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: root
