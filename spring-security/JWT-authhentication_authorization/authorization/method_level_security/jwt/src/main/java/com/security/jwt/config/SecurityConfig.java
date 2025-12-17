@@ -35,7 +35,7 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/swagger", "/authenticate").permitAll()
+                        auth.requestMatchers("/swagger", "/authenticate","/api/users/register").permitAll()
 //                                .requestMatchers("/weather/health").hasRole(Role.ADMIN.name()) //role based
 //                                .requestMatchers(HttpMethod.GET,"/weather/**").hasAuthority(Permission.WEATHER_READ.name())
 //                                .requestMatchers(HttpMethod.POST,"/weather/**").hasAuthority(Permission.WEATHER_WRITE.name())
